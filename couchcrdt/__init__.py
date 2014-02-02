@@ -1,2 +1,3 @@
 from counter import DistributedCounter
-__all__ = [DistributedCounter]
+from dset import DistributedSet
+__all__ = [DistributedCounter, DistributedSet]
