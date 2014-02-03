@@ -37,6 +37,7 @@ class DistributedSet(CRDT):
         self.additions[item] += 1
 
     def remove(self, item):
+        # Have to add here because we use counter subtraction below
         self.deletions[item] += 1
 
     def __iter__(self):
